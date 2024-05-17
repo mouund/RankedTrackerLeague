@@ -1,0 +1,1 @@
+docker build -t rtracker:0.1 -t rtracker:latest .

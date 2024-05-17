@@ -1,0 +1,15 @@
+[Unit]
+Description=Discord bot
+
+
+[Service]
+Restart=on-failure
+ExecStart=%h/RankedTrackerLeague/start-bot.sh
+Type=simple
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=350
+StartLimitBurst=10
+
+[Install]
+WantedBy=multi-user.target
